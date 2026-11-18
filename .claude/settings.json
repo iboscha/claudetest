@@ -53,20 +53,5 @@
       "mcp__Lovable__set_folder_visibility",
       "mcp__Lovable__delete_workspace_skill"
     ]
-  },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "mcp__Lovable__query_database",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 -I \"$CLAUDE_PROJECT_DIR/.claude/hooks/lovable-sql-guard.py\"",
-            "timeout": 10,
-            "statusMessage": "Checking that the Lovable SQL is read-only"
-          }
-        ]
-      }
-    ]
   }
 }
