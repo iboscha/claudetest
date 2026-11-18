@@ -17,7 +17,6 @@
       "mcp__Lovable__get_project_knowledge",
       "mcp__Lovable__get_project_analytics",
       "mcp__Lovable__get_project_analytics_trend",
-      "mcp__Lovable__query_database",
       "mcp__Lovable",
       "mcp__Lovable__*",
       "mcp__Lovable__send_message",
@@ -52,6 +51,9 @@
       "mcp__Lovable__set_project_visibility",
       "mcp__Lovable__set_folder_visibility",
       "mcp__Lovable__delete_workspace_skill"
+    ],
+    "deny": [
+      "mcp__Lovable__query_database"
     ]
   }
 }
